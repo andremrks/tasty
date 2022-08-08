@@ -1,0 +1,105 @@
+/* Media Query */
+
+@media (max-width: 768px) {
+    header, header.sticky {
+        padding: 10px 20px;
+    }
+
+    header .nav {
+        display: none;
+    }
+
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(./assets/toggle.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    
+    .menuToggle.active {
+        background: url(./assets/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+
+    .nav.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 68px;
+        left: 0;
+        background-color: #fff;
+    }
+
+    header .navi li {
+        margin-left: 0;
+    }
+
+    .nav.active li a {
+        color: #111;
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .banner .content h2 {
+        font-size: 3.5rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col50 { 
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col50 .imgBx {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .menu .content {
+        flex-direction: row;
+    }
+
+    .menu .content .box {
+        margin: 10px;
+    }
+
+    .expert .content {
+        margin-top: 20px;
+    }
+    
+    .expert .content .box {
+        margin: 10px;
+    }
+
+    .testimonials .content .box {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .contactForm {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
